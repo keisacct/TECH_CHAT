@@ -14,7 +14,7 @@
                 <div class="row__rightbox">
                     <div class="rightbox__top">
                         <div class="row__title">
-                            <%= chat.title %><br>
+                            <%= link_to chat.title, chat_path(chat.id) %><br>
                         </div>
                         <div class="row__name">
                             <%= chat.name %><br><br>
