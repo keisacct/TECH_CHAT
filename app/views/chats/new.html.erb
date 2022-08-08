@@ -1,6 +1,27 @@
-<%= form_with(model: @chat, local: true) do |form| %>
-    <%= form.text_field :title, placeholder: "タイトル" %><br>
-    <%= form.text_area :content, placeholder: "質問内容" %><br>
-    <%= form.text_field :name, placeholder: "投稿者名" %><br>
-    <%= form.submit "POST" %>
- <% end %>
+<div class="form-main">
+
+    <div class="form-box">
+        <div class="form-header">
+        </div>
+
+        <div class="form-chatbox">
+            <%= form_with(model: @chat, local: true) do |form| %>
+                <div class="form-items">
+                    <div class="form-items__title">
+                        <%= form.text_field :title, placeholder: "タイトル" %><br>
+                    </div>
+                    <div class="form-items__content">
+                        <%= form.text_area :content, placeholder: "質問内容" %><br>
+                    </div>
+                    <div class="form-items__name">
+                        <%= form.text_field :name, placeholder: "投稿者名" %><br>
+                    </div>
+                    <div class="form-items__btn">
+                        <%= form.submit "POST" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+</div>
