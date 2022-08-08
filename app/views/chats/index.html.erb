@@ -1,0 +1,32 @@
+
+<div class="main-chat">
+    <div class="contents rows">
+        <% @chats.each do |chat| %>
+            <div class="row__box">
+                <div class="row__leftbox">
+                    <div class="num__comments">
+                        0
+                    </div>
+                    <div class="comments">
+                        comments
+                    </div>
+                </div>
+                <div class="row__rightbox">
+                    <div class="rightbox__top">
+                        <div class="row__title">
+                            <%= chat.title %><br>
+                        </div>
+                        <div class="row__name">
+                            <%= chat.name %><br><br>
+                        </div>
+                    </div>
+                    <div class="rightbox__bottom">
+                        <div class="row__content">
+                            <%= chat.content %><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

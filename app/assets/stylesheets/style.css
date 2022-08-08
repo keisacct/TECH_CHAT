@@ -1,0 +1,113 @@
+/* ======== application.html.erb =========*/
+div.header__bar.row{
+    background-color: #1c3667;
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+h1.roboto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    letter-spacing: 1.8px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+div.user_nav{
+    /* background-color: black; */
+    background-color: white;
+    width: 80px;
+    height: 32px;
+    margin-right: 20px;
+    /* text-align: center; */
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.ask{
+    font-size: 16px;
+    color: #3a3736;
+}
+
+a,a:hover,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ======== index.html.erb =========*/
+div.main-chat{
+    height: calc(100vh - 65px);
+    width: 100vw;
+    background-color: #f2f2f3;
+}
+
+div.contents.rows{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+
+div.row__box{
+    margin-bottom: 25px;
+    display: flex;
+}
+
+div.row__leftbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    background-color: #1c3667;
+    border-radius: 5px 0 0 5px;
+}
+
+div.row__rightbox{
+    width: 630px;
+    height: 100px;
+    background-color: #ffffff;
+
+}
+
+div.num__comments{
+    font-size: 26px;
+    color: #ffffff;
+}
+
+div.comments{
+    font-size: 11px;
+    color: #ffffff;
+}
+
+div.rightbox__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div.row__title{
+    font-size: 14px;
+    width: 500px;
+    background-color: gray;
+}
+
+div.row__content, div.row__name{
+    font-size: 12px;
+}
+
+
+
+
+/* ======== .html.erb =========*/
